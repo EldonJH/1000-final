@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <link rel="stylesheet" href="FinalProjectStyleSheet.css"/>
+        <title>Final Project</title>
+    </head>
+    <body>
+         <div>
+        <h1>Code</h1>
+        </div>
+        <hr>
+        <button onclick="window.location.href = 'Index.html';"> Home </button>
+        <button onclick="window.location.href = 'AboutME.html';"> About Me </button>
+        <button onclick="window.location.href = 'Image1.html';"> Image 1 </button>
+        <button onclick="window.location.href = 'Image2.html';"> Image 2 </button>
+        <button onclick="window.location.href = 'Table.html';"> Table </button>
+        <hr>
+        <p>This is a block of code from the FizzBuzz assignment</p>
+        <hr>
+        <figure>
+            <pre>
+                <code>
+                &lt!DOCTYPE html>
+                &lthtml>
+                &lthead>
+                &ltmeta charset="UTF-8">
+                &lttitle>Fizz Buzz &gt:/title>
+                &ltscript>
+            
+                function fizzbuzz() {
+                    var display = document.getElementById('display');
+                    var displayHTML = "";
+                    var result = "";
+                    for (i = 1; i < 101; i++) {
+                        if (i % 15 == 0){
+                            result = "FizzBuzz";
+                     }else if (i % 3 == 0){
+                            result = "Fizz";
+                        }else if (i % 5== 0){
+                            result = "Buzz";
+                        }else {
+                            result = i;
+                        }
+                        displayHTML += " &gt:p>" + result + " &gt:/p>";
+                    }
+                    display.innerHTML = displayHTML
+             }
+            
+                &lt/script>
+            
+                &lt/head>
+            
+                &ltbody onload="fizzbuzz()">
+                &ltdiv id="display">
+            
+                &lt/div>
+                &lt/body>
+            
+                &lt/html>            
+                </code>
+            </pre>
+    </figure>   
+    </body>
+</html>
